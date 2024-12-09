@@ -1,0 +1,564 @@
+
+@font-face {
+    font-family:"Roboto";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family:"Poppins";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family:"Allura";
+    src: url(../fonts/Allura-Regular.ttf);
+}
+li{
+    list-style: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family:Roboto, sans-serif ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h4{
+    font-family: Allura;
+    font-size: 1.9rem;
+    color: rgb(245, 183, 51);
+    font-weight: 300;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: Poppins;
+    line-height: 2px
+}
+
+/* ********************** HEADER **************** */
+header{
+    min-height: 100vh;
+    color: white;
+    background: url(../img/bg-slider-06.jpg) center/cover;
+}
+nav{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    padding: 20px 0;
+    align-items: center;
+}
+
+nav ul{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.5rem;  
+}
+
+#logo{
+    font-family: Allura;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+    text-align: left;
+}
+nav .icones{
+font-size: 0.6rem;
+text-align: right;
+}
+nav .icones span{
+    margin-left:10px;
+}
+
+/* Header content */
+.text-header{
+    padding: 180px 0;
+} 
+
+.text-header h4{
+    font-family: Allura;
+    font-size: 1.9rem;
+    color: rgb(245, 183, 51);
+    font-weight: 300;
+}
+.text-header h1{
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    font-family: Poppins;
+    line-height: 25px;
+}
+.text-header span img{
+    margin: 30px 0;
+}
+.text-header p{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 0.5rem;
+    letter-spacing: 5px;
+}
+
+/* **************** MAIN SECTION1 *********** */
+main .section1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 35vh;
+  
+
+}
+.section1-left{
+    /* border: 1px solid red; */
+    background: rgb(228, 222, 222);
+}
+.section1-left-container{
+    margin: 10px;
+}
+.section1 .presentation-container{
+ /* border: 1px solid blue; */
+ margin-top: 20px;
+}
+.section1 .presentation-container h4{
+    font-size: 1.5rem;
+    
+}
+.section1 .presentation-container .title span{
+    /* border: 1px solid red; */
+    display: block;
+    margin: 25px 0;
+}
+.section1-left-container p{
+    font-size: 0.6rem;
+    margin-bottom: 20px;
+}
+.section1 .profil{ 
+     margin: 20px 0;
+} 
+.section1 .profil span img{
+    height: 35px;
+    width: 35px;
+    border-radius: 250px;
+}
+.section1 .profil h3{
+    font-size: 0.9rem;
+    line-height: 5px;
+    margin-top: 15px;
+}
+.section1 .profil .role{
+    color: gray;
+    font-size: 0.7rem;
+    
+}
+
+.section1-rigth{
+    background: url(../img/store-01.jpg) center/cover;
+}
+
+/* ************* SECTION 2 *************** */
+
+.section2{
+    padding: 20px 0;
+    color: white;
+    background: black;
+    min-height: 25vh;
+}
+.section2 h4{
+    font-size: 1.4rem;
+}
+.section2 span img{
+    margin: 15px 0;
+}
+.section2 ul{
+    display: flex;
+    justify-content: center;
+
+}
+.section2 ul li{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin: 0 25px;
+    position: relative; 
+}
+.section2 ul li:after{
+content: "";
+height: 1px;
+width: 100%;
+position: absolute;
+bottom: -5px;
+left: 0;
+background:white;
+}
+
+/* ************* SECTION 3 *************** */
+.section3{
+    padding: 20px;
+    height: 50vh;
+    /* border: 1px solid red; */
+    background: url(../img/bg-menu-01.jpg) left/cover;
+    position: relative;
+}
+.menu-card{
+    width: 70%;
+    margin: 0 auto;
+    height: 45vh;
+   display: grid;
+   grid-template-columns: 50% 50%;
+    background: rgb(238, 233, 233);
+    font-size: 0.8rem;
+    max-width: 700px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65px;
+}
+.menu-card p{
+    font-size: 0.6rem; 
+}
+.menu-card img{
+width: 50px;
+height: 50px;
+}
+.card-left, .card-rigth{
+    display: grid;
+}
+.card-left > div, .card-rigth > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+    border-bottom: 1px solid rgb(223, 215, 215);
+}
+
+/* ************** *SECTION 4 ******************** */
+.section4{
+    height: 130vh;
+    background: rgb(36, 35, 35);
+}
+.section4-part1{
+    height: 40vh;
+    /* border: 1px solid blue; */
+    margin: 60px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.left-container{
+    margin: 10px 0;
+    background: black;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.open-time{
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px dashed  white;
+    margin: 10px;
+}
+.open-time h3{
+    color: rgb(206, 140, 55);
+    font-size: 0.8rem;
+    margin: 10px 0;
+    line-height: 3px;
+}
+.open-time p{
+    font-size: 0.6rem;
+    
+}
+.open-time img{
+    height: 20px;
+    width: 20px;
+}
+
+.open-time .tel{
+    color: rgb(206, 140, 55);
+    font-size: 0.7rem;
+}
+.rigth-container{
+    background:  rgb(250, 248, 248);
+    /* margin-left: 55px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contaier-reservation{
+    width: 90%;
+}
+.contaier-reservation h2{
+    font-size: 1.1rem;
+}
+.contaier-reservation span img{
+    height: 20px;
+    width: 20px;
+    margin: 25px 0;
+}
+.contaier-reservation form{
+    width: 90%;
+    margin: 0 auto;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+}
+.form-part1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.form-part1 input, .form-part1 select{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    
+}
+.form-part1 select{
+    display: flex;
+    align-items: center;
+}
+.contaier-reservation form input{
+    font-size: 0.7rem;
+    max-width: 100px;
+    background: transparent;
+    
+}
+.form-part2{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    
+}
+
+.form-part2 input{
+    /* border: 1px solid red; */
+    font-size: 0.4rem;
+    border: none;
+}
+
+form button{
+    margin-top: 25px;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 0.6rem;
+    width: 100px;
+}
+
+.section4-part2{
+    margin: 60px;
+    min-height: 40px;
+}
+
+.section4-part2 h2{
+    font-size: 1.2rem;
+    line-height: 10px;
+    color: white;
+}
+
+.section4-part2 img{
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+}
+.event-day{
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+}
+.event-day .left-part{
+    display: grid;
+    gap: 10px;
+    background: black;
+}
+.section4 .left-part1, .section4 .left-part2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.section4 .left-part1 .date{
+    background:url(../img/event-01.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .left-part2 .date{
+    background:url(../img/event-02.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section4 .left-part1 .date-news,
+.section4 .left-part2 .date-news
+{
+ margin-right: 15px;
+ background: rgb(247, 246, 246);
+ text-align: left;
+ padding: 20px;
+}
+.section4 .left-part1 .date-news h3,
+.section4 .left-part2 .date-news h3{
+    font-size: 0.9rem;
+}
+
+.section4 .left-part1 .date-news p,
+.section4 .left-part2 .date-news p{
+   color: rgba(168, 156, 156, 0.658);
+   font-size: 0.6rem;
+   padding: 15px 0;
+}
+.section4 .left-part1 .date-news a,
+.section4 .left-part2 .date-news a{
+    color: black;
+    font-size: 0.7rem;
+}
+.section4 .rigth-part{
+    display: flex;
+    align-items: center;
+    background: url(../img/event-03.jpg) center/cover;
+}
+.section4 .ticket-content{
+    background: rgb(247, 246, 246);
+    height: 85%;
+    margin: 15px;
+    
+   
+}
+
+.section4  .day-month{
+    width: 50px;
+    height: 60px;
+    background: rgb(37, 37, 37);
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section4  .day-month .day{
+    font-size: 1.1rem;
+
+}
+.section4  .day-month .month{
+    font-size: 0.6rem;  
+}
+.section4 .ticket-content h3{
+    font-size: 0.9rem;
+    padding: 15px 0 10px;
+    font-weight: 200;
+}
+.section4 .ticket-content :nth-child(3){
+    font-size: 0.6rem;
+    color: rgba(168, 156, 156, 0.658);
+}
+
+.section4 .ticket-content a{
+    font-size: 0.7rem;
+    color: black;
+    display: block;
+   padding: 40px 0;
+}
+
+/* **********SECTION 5 ************* */
+
+.section5{
+    background: url(../img/gmap.jpg) center/cover;
+    height: 25vh;
+    position: relative;
+}
+.section5 .ceo{
+    width: 85%;
+    margin: 0 auto;
+    background: rgb(247, 246, 246);
+    height: 25vh;
+   left: 50%;
+   transform: translateY(-50%);
+}
+.section5 .ceo p{
+    font-size: 0.7rem;
+    line-height: 20px;
+    padding: 30px;
+}
+.section5 .ceo h3{
+    font-size: 0.9rem;
+
+    font-weight: 200;
+}
+.section5 .ceo h5{
+    margin: 10px 0;
+    color:  rgb(206, 140, 55);
+    font-size: 0.7rem;
+}
+.section5 img{
+    height: 40px;
+    width: 40px;
+    border-radius: 250px;
+    position: absolute;
+    top: -125px;
+}
+/* ************************** FOOTER ******************** */
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    background: url(../img/bg-footer.jpg);
+    min-height: 20vh;
+    text-align: left;
+}
+
+footer .resto{
+    padding: 30px;
+   
+}
+    
+
+footer .resto p{
+   font-size: 0.6rem;
+    line-height: 20px;
+    font-weight: 100;
+}
+footer .newsletter{
+    background: rgb(41, 39, 39);
+    text-align: left;
+    padding: 30px;
+}
+footer .newsletter .adress h3{
+    font-size: 0.7rem;
+    padding: 5px 0;
+
+}
+footer .newsletter .adress input{
+    background: transparent;
+    padding: 5px;
+    border: 1px solid gray;
+}
+footer .followus{
+    display: flex;
+    font-size: 0.5rem;
+    margin: 30px 0;
+  
+}
+footer .followus h3{
+    margin-right: 10px;
+}
+footer .followus ul{
+    display: flex;
+}
+footer .followus ul li{
+    margin: 0 10px;
+    color: gray;
+}
